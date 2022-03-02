@@ -1,0 +1,30 @@
+{
+  "name": "tailwind-react-alerts",
+  "version": "0.0.1",
+  "description": "Alerts maked with tailwind ready to use with reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddyGames69/tailwind-react-alerts.git"
+  },
+  "keywords": [
+    "alerts",
+    "tailwind",
+    "react",
+    "react",
+    "alerts",
+    "tailwind",
+    "alerts",
+    "alerts",
+    "npm"
+  ],
+  "author": "Freddy Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreddyGames69/tailwind-react-alerts/issues"
+  },
+  "homepage": "https://github.com/FreddyGames69/tailwind-react-alerts#readme"
+}
