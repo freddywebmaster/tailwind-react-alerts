@@ -156,13 +156,12 @@ const onClickButton = () => {
     textBtn: "Contacts",
     textBtnDismiss: "Close",
     iconBtn: "fa-solid fa-address-book",
-    onClickBtn: ()=>{
-        alert('Hi alert!')
-    }
+    onClickBtn: () => {
+      alert("Hi alert!");
+    },
   });
 };
 ```
-
 
 ## Colors avalibles
 
@@ -174,3 +173,12 @@ const onClickButton = () => {
 - indigo
 - sky
 - purple
+
+## Icons avalibles
+
+- info
+- exclamation
+- error
+- warning
+- question
+- success
