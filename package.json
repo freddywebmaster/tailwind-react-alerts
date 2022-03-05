@@ -1,10 +1,10 @@
 {
-  "name": "tailwind-react-alerts",
-  "version": "0.0.1",
+  "name": "tailwind-react-alert",
+  "version": "0.0.4",
   "description": "Alerts maked with tailwind ready to use with reactjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files && npx tailwindcss -i ./src/index.css -o ./dist/index.css"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,20 @@
   "bugs": {
     "url": "https://github.com/FreddyGames69/tailwind-react-alerts/issues"
   },
-  "homepage": "https://github.com/FreddyGames69/tailwind-react-alerts#readme"
+  "homepage": "https://github.com/FreddyGames69/tailwind-react-alerts#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.69.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "@dr.pogodin/babel-plugin-react-css-modules": "6.6.1",
+    "animate.css": "4.1.1",
+    "corejs": "^1.0.0",
+    "react": "17.0.2"
+  }
 }
