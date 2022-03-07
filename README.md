@@ -1,4 +1,4 @@
-# Simple, beautiful and customizable alerts
+# Simple, beautiful and customizable alerts (beta)
 
 `tailwind-react-alert` provides alerts out of the box with react.
 this library uses `animate css` and `font awesome`, so you can customize your alerts super easy
@@ -15,10 +15,12 @@ this library uses `animate css` and `font awesome`, so you can customize your al
 
 ## Configurations
 
-- First we import the `AlertProvider` and add it to the `index.js`;
+- First we import the `AlertProvider` and add it to the `index.js` or `app.js`
+- then import the `styles css` in your `index.js` or `app.js`
 
 ```javascript
-import { AlertProvider } from "tailwind-react-alert";
+import { AlertsProvider } from "tailwind-react-alert";
+import "tailwind-react-alert/src/index.css";
 ```
 
 - This is a context so it should surround your application.
@@ -26,9 +28,9 @@ import { AlertProvider } from "tailwind-react-alert";
 ```javascript
 ReactDOM.render(
   <React.StrictMode>
-    <AlertProvider>
+    <AlertsProvider>
       <App />
-    </AlertProvider>
+    </AlertsProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

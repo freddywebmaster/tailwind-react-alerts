@@ -1,4 +1,4 @@
-export const icons = {
+const icons = {
   info: "fa-solid fa-circle-info",
   exclamation: "fa-solid fa-circle-exclamation",
   error: "fa-solid fa-circle-xmark",
@@ -8,8 +8,8 @@ export const icons = {
 };
 
 /* ALERT BORDER CONSTANTS */
-export const ALERT_BORDER_TYPE = "border";
-export const AlertBorderConfig = {
+const ALERT_BORDER_TYPE = "border";
+const AlertBorderConfig = {
   color: "blue",
   icon: "info",
   autoClose: 4000,
@@ -20,8 +20,8 @@ export const AlertBorderConfig = {
 
 /*ALERT CONTENT CONSTANTS */
 
-export const ALERT_CONTENT_TYPE = "content";
-export const AlertContentConfig = {
+const ALERT_CONTENT_TYPE = "content";
+const AlertContentConfig = {
   color: "blue",
   icon: "info",
   autoClose: 0,
@@ -36,8 +36,8 @@ export const AlertContentConfig = {
 };
 
 /* ALERT SIMPLE CONSTANTS */
-export const ALERT_SIMPLE_TYPE = "ALERT_SIMPLE_TYPE";
-export const AlertSimpleConfig = {
+const ALERT_SIMPLE_TYPE = "ALERT_SIMPLE_TYPE";
+const AlertSimpleConfig = {
   color: "blue",
   autoClose: 0,
   text: "Info! Change a few things up and try submitting again.",
@@ -46,4 +46,14 @@ export const AlertSimpleConfig = {
   icon: "info",
   showIcon: true,
   showBtnDismiss: true,
+};
+
+module.exports = {
+  icons,
+  ALERT_BORDER_TYPE,
+  ALERT_CONTENT_TYPE,
+  ALERT_SIMPLE_TYPE,
+  AlertBorderConfig,
+  AlertContentConfig,
+  AlertSimpleConfig,
 };

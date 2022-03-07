@@ -1,6 +1,6 @@
-const { default: useAlert } = require("./dist/hooks/useAlert");
+const useAlert = require("./src/hooks/useAlert");
 
-const { default: AlertProvider } = require("./dist/context/alerts/state");
+const AlertProvider = require("./src/context/alerts/state");
 
 module.exports = {
   useAlert,

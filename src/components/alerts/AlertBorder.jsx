@@ -1,8 +1,8 @@
-import React, { useEffect, useContext, useRef } from "react";
-import { AlertsContext } from "../../context/alerts/context";
-import { icons } from '../../context/alerts/constants';
-import { alertBorderTheme as colors } from '../../context/alerts/themes';
-
+const { useEffect, useContext, useRef } = require("react");
+const { AlertsContext } = require("../../context/alerts/context");
+const { icons } = require('../../context/alerts/constants');
+const { alertBorderTheme : colors } = require('../../context/alerts/themes');
+import React from 'react';
 const AlertBorder = ({ data }) => {
   const AlertRef = useRef();
 
@@ -80,4 +80,4 @@ const AlertBorder = ({ data }) => {
   );
 };
 
-export default AlertBorder;
+module.exports = AlertBorder;

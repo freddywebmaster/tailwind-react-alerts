@@ -1,13 +1,13 @@
-import { AlertsContext } from "../context/alerts/context";
-import { useContext } from "react";
-import {
+const { AlertsContext } = require("../context/alerts/context");
+const { useContext } = require("react");
+const {
   ALERT_BORDER_TYPE,
   AlertBorderConfig,
   ALERT_CONTENT_TYPE,
   AlertContentConfig,
   AlertSimpleConfig,
   ALERT_SIMPLE_TYPE,
-} from "../context/alerts/constants";
+} = require("../context/alerts/constants");
 
 const useAlert = () => {
   const { addAlert } = useContext(AlertsContext);
@@ -38,4 +38,5 @@ const useAlert = () => {
     aSimple,
   };
 };
-export default useAlert;
+
+module.exports = useAlert;

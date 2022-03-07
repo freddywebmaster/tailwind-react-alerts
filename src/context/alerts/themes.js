@@ -1,4 +1,4 @@
-export const alertBorderTheme = {
+const alertBorderTheme = {
   blue: {
     bg: ["bg-blue-100", "bg-blue-200", "hover:bg-blue-200"],
     text: ["text-blue-500", "text-blue-700"],
@@ -49,7 +49,7 @@ export const alertBorderTheme = {
   },
 };
 
-export const alertContentTheme = {
+const alertContentTheme = {
   blue: {
     text: ["text-blue-700", "text-white"],
     bg: ["bg-blue-700", "bg-blue-100"],
@@ -108,7 +108,7 @@ export const alertContentTheme = {
   },
 };
 
-export const alertSimpleTheme = {
+const alertSimpleTheme = {
   blue: {
     bg: ["bg-blue-100"],
     text: ["text-blue-700", "text-blue-500"],
@@ -157,4 +157,10 @@ export const alertSimpleTheme = {
     hover: ["hover:bg-purple-200"],
     focus: ["focus:ring-purple-400"],
   },
+};
+
+module.exports = {
+  alertBorderTheme,
+  alertContentTheme,
+  alertSimpleTheme,
 };

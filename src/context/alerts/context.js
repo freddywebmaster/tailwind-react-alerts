@@ -1,3 +1,7 @@
-import { createContext } from "react";
+const { createContext } = require("react");
 
-export const AlertsContext = createContext(null);
+const AlertsContext = createContext(null);
+
+module.exports = {
+  AlertsContext,
+};

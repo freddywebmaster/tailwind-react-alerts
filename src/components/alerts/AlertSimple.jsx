@@ -1,8 +1,8 @@
-import React,{ useEffect, useRef, useContext } from "react";
-import { icons } from "../../context/alerts/constants";
-import { AlertsContext } from "../../context/alerts/context";
-import { alertSimpleTheme as colors } from "../../context/alerts/themes";
-
+const { useEffect, useRef, useContext } = require("react");
+const { icons } = require("../../context/alerts/constants");
+const { AlertsContext } = require("../../context/alerts/context");
+const { alertSimpleTheme : colors } = require("../../context/alerts/themes");
+import React from 'react';
 const AlertSimple = ({ data }) => {
   const AlertRef = useRef();
 
@@ -76,4 +76,4 @@ const AlertSimple = ({ data }) => {
   );
 };
 
-export default AlertSimple;
+module.exports = AlertSimple;

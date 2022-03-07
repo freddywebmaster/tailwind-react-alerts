@@ -1,4 +1,8 @@
-export const ADD_ALERT = 'ADD_ALERT';
+const ADD_ALERT = "ADD_ALERT";
 
+const REMOVE_ALERT = "REMOVE_ALERT";
 
-export const REMOVE_ALERT = 'REMOVE_ALERT';
+module.exports = {
+  ADD_ALERT,
+  REMOVE_ALERT,
+};

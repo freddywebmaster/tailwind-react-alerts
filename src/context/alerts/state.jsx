@@ -1,10 +1,10 @@
-import { AlertsContext } from "./context";
-import React, { useReducer } from "react";
-import AlertsReducer from "./reducer";
-import { ADD_ALERT, REMOVE_ALERT } from "./types";
-import { nanoid } from "nanoid";
-import AlertsContainer from "../../components/layout/AlertsContainer";
-import '../../index.css';
+const { AlertsContext } = require("./context");
+const { useReducer } = require("react");
+const AlertsReducer = require("./reducer");
+const { ADD_ALERT, REMOVE_ALERT } = require("./types");
+const { nanoid } = require("nanoid");
+const AlertsContainer = require("../../components/layout/AlertsContainer");
+import React from 'react';
 
 const AlertsProvider = (props) => {
   const initialState = {
@@ -43,4 +43,5 @@ const AlertsProvider = (props) => {
     </AlertsContext.Provider>
   );
 };
-export default AlertsProvider;
+
+module.exports = AlertsProvider;

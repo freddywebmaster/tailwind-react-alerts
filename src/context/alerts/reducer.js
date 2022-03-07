@@ -1,4 +1,4 @@
-import { ADD_ALERT, REMOVE_ALERT } from "./types";
+const { ADD_ALERT, REMOVE_ALERT } = require("./types");
 
 const AlertsReducer = (state, action) => {
   switch (action.type) {
@@ -16,4 +16,5 @@ const AlertsReducer = (state, action) => {
       return state;
   }
 };
-export default AlertsReducer;
+
+module.exports = AlertsReducer;
