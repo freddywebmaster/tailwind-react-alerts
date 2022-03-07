@@ -1,10 +1,12 @@
 {
   "name": "tailwind-react-alert",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Alerts maked with tailwind ready to use with reactjs",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/lib.css -o ./src/index.css"
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
+    "build:js": "rm -rf dist && babel src --out-dir dist",
+    "build": "npm run build:js && npm run build:css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,10 @@
   },
   "homepage": "https://github.com/FreddyGames69/tailwind-react-alerts#readme",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {

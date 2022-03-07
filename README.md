@@ -19,8 +19,8 @@ this library uses `animate css` and `font awesome`, so you can customize your al
 - then import the `styles css` in your `index.js` or `app.js`
 
 ```javascript
-import { AlertsProvider } from "tailwind-react-alert";
-import "tailwind-react-alert/src/index.css";
+import { AlertProvider } from "tailwind-react-alert";
+import "tailwind-react-alert/dist/index.css";
 ```
 
 - This is a context so it should surround your application.
@@ -28,9 +28,9 @@ import "tailwind-react-alert/src/index.css";
 ```javascript
 ReactDOM.render(
   <React.StrictMode>
-    <AlertsProvider>
+    <AlertProvider>
       <App />
-    </AlertsProvider>
+    </AlertProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
